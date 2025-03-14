@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare Plus - Australian Clinical Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #2c5282 0%, #4299e1 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-blue-700">MediCare Plus</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#services" class="text-gray-600 hover:text-blue-700">Services</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-700">About Us</a>
+                    <a href="#locations" class="text-gray-600 hover:text-blue-700">Locations</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-700">Contact</a>
+                    <button class="bg-blue-700 text-white px-6 py-2 rounded-full hover:bg-blue-800">Book Now</button>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-600">
+                        <i class="bi bi-list text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#services" class="block px-3 py-2 text-gray-600">Services</a>
+                <a href="#about" class="block px-3 py-2 text-gray-600">About Us</a>
+                <a href="#locations" class="block px-3 py-2 text-gray-600">Locations</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-600">Contact</a>
+                <button class="w-full bg-blue-700 text-white px-6 py-2 rounded-full mt-2">Book Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Professional Clinical Services in Australia</h1>
+                <p class="text-xl mb-8">Providing quality healthcare solutions for small offices across Australia</p>
+                <button class="bg-white text-blue-700 px-8 py-3 rounded-full text-lg font-semibold hover:bg-gray-100">
+                    Schedule a Consultation
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="bi bi-heart-pulse text-4xl text-blue-700"></i>
+                    <h3 class="text-xl font-semibold mt-4">General Health Checkups</h3>
+                    <p class="text-gray-600 mt-2">Comprehensive health assessments and preventive care services.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="bi bi-capsule text-4xl text-blue-700"></i>
+                    <h3 class="text-xl font-semibold mt-4">Medication Management</h3>
+                    <p class="text-gray-600 mt-2">Professional medication review and management services.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="bi bi-clipboard2-pulse text-4xl text-blue-700"></i>
+                    <h3 class="text-xl font-semibold mt-4">Clinical Consultations</h3>
+                    <p class="text-gray-600 mt-2">Expert medical consultations and healthcare advice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">About MediCare Plus</h2>
+                    <p class="text-gray-600 mb-4">
+                        We are a leading provider of clinical services for small offices across Australia. Our team of experienced healthcare professionals is dedicated to delivering exceptional care and support to all our clients.
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center"><i class="bi bi-check2-circle text-blue-700 mr-2"></i> Licensed Healthcare Professionals</li>
+                        <li class="flex items-center"><i class="bi bi-check2-circle text-blue-700 mr-2"></i> Medicare Approved</li>
+                        <li class="flex items-center"><i class="bi bi-check2-circle text-blue-700 mr-2"></i> Nationwide Coverage</li>
+                    </ul>
+                </div>
+                <div class="bg-blue-700 h-64 rounded-lg"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Contact Us</h2>
+            <div class="max-w-xl mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Name</label>
+                        <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-700">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-700">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Message</label>
+                        <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-700" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-700 text-white py-3 rounded-lg hover:bg-blue-800">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">MediCare Plus</h3>
+                    <p class="text-gray-400">Your trusted healthcare partner in Australia</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>1234 Healthcare Street</li>
+                        <li>Sydney, NSW 2000</li>
+                        <li>Phone: (02) 1234 5678</li>
+                        <li>Email: info@medicareplus.com.au</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400">
+                <p>&copy; 2023 MediCare Plus. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
